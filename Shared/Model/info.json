@@ -1,0 +1,42 @@
+[
+    {
+        "text": "Where do I pick my up order?",
+        "children": [
+            {
+            "text": "We will bring your order to the Round Square area, which is next to the SLC."
+            }
+        ]
+    },
+    {
+        "text": "Where do I pay?",
+        "children": [
+            {
+            "text": "To pay for your order, you will have to come to the SLC between 12:45 and 1:30. You can pay with either cash, debit or credit. We also accept apple pay."
+            }
+        ]
+    },
+    {
+        "text": "What happens if I don't pay?",
+        "children": [
+            {
+            "text": "If you do not pay for your order before lunch is over, we are unable to pick up your order and you will not recieve your food."
+            }
+        ]
+    },
+    {
+        "text": "How much is delivery?",
+        "children": [
+            {
+            "text": "The delivery charge is based on the price of your order. If your order is between $0 - $5, there is $2 delivery. Between $5 - $10, $4 delivery. Between $10 - $20, $5 delivery. For orders over $20 there is a $7 delivery fee.."
+            }
+        ]
+    },
+    {
+        "text": "What happens if the restaurant doesn't have what I ordered?",
+        "children": [
+            {
+            "text": "If the restaurant you've ordered from does not have what you ordered, we will bring you the missing items on the following business day. "
+            }
+        ]
+    },
+]

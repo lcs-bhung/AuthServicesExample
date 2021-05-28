@@ -26,70 +26,7 @@ struct AuthenticatedView: View {
     
     var body: some View {
         
-        VStack(spacing: 10) {
-            
-            Group {
-                
-                Text("Welcome")
-                    .font(.title3)
-                    .padding(.top, 20)
-                
-                // Show user's name
-                Text(sharedAuthenticationStore.userName)
-                    .font(.title)
-                
-                // Show user's email
-                Text(sharedAuthenticationStore.userEmail)
-
-            }
-            
-            Group {
-                
-                // Record my mood
-                Text("How are you feeling today?")
-                    .bold()
-                    .padding(.top)
-                HStack {
-                    Text("😡")
-                        .font(.title)
-                    Slider(value: $mood, in: 0...5, step: 1.0) {
-                        Text("My mood is...")
-                    }
-                    Text("🥳")
-                        .font(.title)
-                }
-                
-                // Share how I'm feeling
-                Button("Save my mood to spreadsheet") {
-                    
-                    // Send the user information to the spreadsheet
-                    saveAndSendUserInformation()
-                    
-                }
-                .padding(.bottom)
-
-            }
-            
-            Group {
-                // How many people have shared their mood?
-                Text("Results")
-                    .bold()
-                    .padding(.top)
-                
-                Text("\(dataStore.visitors.rows.count + moodShareCount) people have shared their mood.")
-            }
-            
-            // Sign out button for whatever service the user signed in with
-            SignOutButtonView()
-                .padding(.top)
-            
-        }
-        .padding()
-        .onAppear() {
-            dataStore.refreshFromRemoteJSONSource()
-            moodShareCount = 0
-        }
-        
+        LCS_EatsApp()
     }
     
     func saveAndSendUserInformation() {
