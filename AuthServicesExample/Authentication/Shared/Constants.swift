@@ -10,7 +10,7 @@ import Foundation
 struct GoogleIdentifiers {
     
     /// - Tag: google_client_id
-    static let clientID = ""
+    static let clientID = "993633261026-mm0ouqafiqhfcp5b0t84d4f17ijva0sd.apps.googleusercontent.com"
     
 }
 
