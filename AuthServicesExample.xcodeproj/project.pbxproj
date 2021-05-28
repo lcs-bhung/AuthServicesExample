@@ -528,7 +528,7 @@
 				CODE_SIGN_ENTITLEMENTS = AuthServicesExample/AuthServicesExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AuthServicesExample/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4UG443984D;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -545,7 +545,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.on.lcs.LCSEats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -560,7 +560,7 @@
 				CODE_SIGN_ENTITLEMENTS = AuthServicesExample/AuthServicesExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AuthServicesExample/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4UG443984D;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -578,7 +578,7 @@
 					"$(OTHER_LDFLAGS)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = ca.on.lcs.LCSEats;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

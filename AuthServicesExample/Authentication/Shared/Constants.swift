@@ -17,6 +17,6 @@ struct GoogleIdentifiers {
 struct AppleIdentifiers {
     
     /// - Tag: apple_bundle_identifer
-    static let bundleID = ""
+    static let bundleID = "ca.on.lcs.LCSEats"
     
 }
