@@ -21,7 +21,7 @@ struct WelcomeView: View {
             Spacer()
             
         }
-        .navigationTitle("x")
+        .navigationTitle("LCS Eats")
         
     }
 }

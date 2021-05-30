@@ -22,11 +22,11 @@ struct Visitors: Codable {
     
     // Will eventually be populated with data matching all the rows of the spreadsheet
     // Begins as an empty list
-    var rows: [Visit] = []
+    var Sheet1: [Visit] = []
     
     // Defines the endpoint for reading/writing spreadsheet data
     // NOTE: This must be updated to point at the endpoint from your Sheety project
     /// - Tag: update_endpoint
-    static let endpoint = "https://api.sheety.co/92d7eb80d996eaeb34616393ebc6ddcf/visitors/rows"
+    static let endpoint = "https://api.sheety.co/c6d8a0ab7de98fa9027c8585ce8f9d11/lcsEatsAppOrders/sheet1"
     
 }

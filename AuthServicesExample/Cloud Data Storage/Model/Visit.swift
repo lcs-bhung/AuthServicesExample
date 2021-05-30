@@ -24,10 +24,14 @@ import Foundation
 /// - Tag: spreadsheet_row_structure
 struct Visit: Codable, Identifiable {
     
-    let date: String
     let name: String
     let email: String
-    let mood: Int
+    let restaurant: String
+    let items: String
+    let itemPrice: Int
+    let tax: Int
+    let delivery: Int
+    let total: Int
     var id: Int = 0     // Will be replaced with each row's number...
                         // A default is required to simplify logic to add a new row
                         // when sending data to Sheety
