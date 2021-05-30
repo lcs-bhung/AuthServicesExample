@@ -9,10 +9,12 @@ import SwiftUI
 
 struct CreateOrderView: View {
     
+    // Access to shared authentication information
+    @EnvironmentObject var sharedAuthenticationStore: SharedAuthentication
+
     @EnvironmentObject var order: Order
     @EnvironmentObject var app: AppState
 
-            
     @ObservedObject var store: OrderStore
         
     var body: some View {
@@ -26,17 +28,17 @@ struct CreateOrderView: View {
                             .foregroundColor(.primary)
                             .textCase(nil)
                             .padding(.top)) {
-                    TextField("Name", text: $order.name)
+                    Text("\(sharedAuthenticationStore.userName)")
                 }
                 
                 // Contact info section
-                Section(header: Text("Phone Number:")
+                Section(header: Text("Email:")
                             .bold()
                             .font(.title3)
                             .foregroundColor(.primary)
                             .textCase(nil)
                             .padding(.top)) {
-                    TextField("Phone Number/Email", text: $order.phoneNumberOrEmail)
+                    Text("\(sharedAuthenticationStore.userEmail)")
                 }
                 
                 // Restaurant choice section

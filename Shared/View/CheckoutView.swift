@@ -9,8 +9,10 @@ import SwiftUI
 
 struct CheckoutView: View {
     
+    // Access to shared authentication information
+    @EnvironmentObject var sharedAuthenticationStore: SharedAuthentication
+
     @EnvironmentObject var order: Order
-    
     @ObservedObject var store: OrderStore
     
     // Changes if alert needs to be shown
@@ -39,12 +41,7 @@ struct CheckoutView: View {
                                     .textCase(nil)
                                     .padding(.top)) {
                             // If the user didn't input a name, display a red "No Name" text
-                            if order.name.isEmpty {
-                                Text("No Name")
-                                    .foregroundColor(.red)
-                            } else {
-                                Text("\(order.name)")
-                            }
+                                Text("\(sharedAuthenticationStore.userName)")
                             
                         }
                         
@@ -55,14 +52,7 @@ struct CheckoutView: View {
                                     .foregroundColor(.primary)
                                     .textCase(nil)
                                     .padding(.top)) {
-                            // If the user didn't input a name, display a red "No Name" text
-                            if order.phoneNumberOrEmail.isEmpty {
-                                Text("No Contact Info")
-                                    .foregroundColor(.red)
-                            } else {
-                                Text("\(order.phoneNumberOrEmail)")
-                            }
-                            
+                                Text("\(sharedAuthenticationStore.userEmail)")                            
                         }
                         
                         // Create a list of all of the users items

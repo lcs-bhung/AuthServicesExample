@@ -28,10 +28,10 @@ struct Visit: Codable, Identifiable {
     let email: String
     let restaurant: String
     let items: String
-    let itemPrice: Int
-    let tax: Int
-    let delivery: Int
-    let total: Int
+    let itemPrice: Double
+    let tax: Double
+    let delivery: Double
+    let total: Double
     var id: Int = 0     // Will be replaced with each row's number...
                         // A default is required to simplify logic to add a new row
                         // when sending data to Sheety

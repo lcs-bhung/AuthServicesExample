@@ -39,10 +39,15 @@ struct AuthenticatedView: View {
         let now = df.string(from: Date())
         
         // Record user's mood on this visit to the app, for posterity
-        let thisVisit = Visit(date: now,
-                              name: sharedAuthenticationStore.userName,
+        
+        let thisVisit = Visit(name: sharedAuthenticationStore.userName,
                               email: sharedAuthenticationStore.userEmail,
-                              mood: Int(mood))
+                              restaurant: "Restaurant",
+                              items: "Items",
+                              itemPrice: 1.1,
+                              tax: 1.1,
+                              delivery: 1.1,
+                              total: 1.1)
         
         // Set visit information up to be sent to remote spreadsheet
         let newRowInSpreadsheet = NewVisit(row: thisVisit)

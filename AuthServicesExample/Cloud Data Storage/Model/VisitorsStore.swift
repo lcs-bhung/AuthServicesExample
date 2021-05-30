@@ -130,4 +130,4 @@ class VisitorsStore: ObservableObject {
 }
 
 // Create a test store for use with Xcode previews
-let visitorsStore = VisitorsStore(loadFromRemote: false)
+let visitorStore = VisitorsStore(loadFromRemote: false)
