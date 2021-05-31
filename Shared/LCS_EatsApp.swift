@@ -54,6 +54,8 @@ struct LCS_EatsApp: View {
                             Image(systemName: "person.fill.questionmark")
                             Text("Info")
                         }
+                    
+                    
                 }
                 
                 // Badge

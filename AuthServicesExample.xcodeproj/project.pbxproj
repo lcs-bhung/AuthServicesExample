@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57CD83142664A4C2001A43D6 /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CD83132664A4C2001A43D6 /* OnboardingData.swift */; };
+		57CD83172664A4DF001A43D6 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CD83162664A4DF001A43D6 /* OnboardingView.swift */; };
 		7DBCFADA26616A1E00128D73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBCFAC826616A1D00128D73 /* Assets.xcassets */; };
 		7DBCFADB26616A1E00128D73 /* LCS_EatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCFAC926616A1D00128D73 /* LCS_EatsApp.swift */; };
 		7DBCFADC26616A1E00128D73 /* FormatEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCFACB26616A1D00128D73 /* FormatEmail.swift */; };
@@ -62,6 +64,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57CD83132664A4C2001A43D6 /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
+		57CD83162664A4DF001A43D6 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		7DBCFAC22661653400128D73 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
 		7DBCFAC826616A1D00128D73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DBCFAC926616A1D00128D73 /* LCS_EatsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCS_EatsApp.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 				7DBCFAD326616A1E00128D73 /* Restaurants.swift */,
 				7DBCFAD426616A1E00128D73 /* OrderStore.swift */,
 				7DBCFAED26617A7C00128D73 /* AppState.swift */,
+				57CD83132664A4C2001A43D6 /* OnboardingData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				7DBCFAD726616A1E00128D73 /* InfoView.swift */,
 				7DBCFAD826616A1E00128D73 /* CreateOrderView.swift */,
 				7DBCFAD926616A1E00128D73 /* MenuView.swift */,
+				57CD83162664A4DF001A43D6 /* OnboardingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -465,6 +471,7 @@
 				8163F28B261DC70B006032CF /* Visitors.swift in Sources */,
 				7DBCFAE426616A1E00128D73 /* Restaurants.swift in Sources */,
 				7DBCFAE526616A1E00128D73 /* OrderStore.swift in Sources */,
+				57CD83172664A4DF001A43D6 /* OnboardingView.swift in Sources */,
 				8185F20C261C9CEF0063142D /* SignOutButtonView.swift in Sources */,
 				81029BE8261CA3BD0019386F /* AuthenticatedView.swift in Sources */,
 				81DB275A2619CC8300F7C0CF /* GoogleAuthenticationManager.swift in Sources */,
@@ -473,6 +480,7 @@
 				81029BE5261CA0AD0019386F /* SignInButtonsView.swift in Sources */,
 				81DB27312619C4A300F7C0CF /* WelcomeView.swift in Sources */,
 				7DBCFAE026616A1E00128D73 /* Info.swift in Sources */,
+				57CD83142664A4C2001A43D6 /* OnboardingData.swift in Sources */,
 				81DB272F2619C4A300F7C0CF /* AuthServicesExampleApp.swift in Sources */,
 				7DBCFADB26616A1E00128D73 /* LCS_EatsApp.swift in Sources */,
 				81A3BD6E261B410B0056813B /* AppleSignInView.swift in Sources */,
