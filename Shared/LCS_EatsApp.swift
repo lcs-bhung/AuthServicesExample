@@ -17,6 +17,7 @@ struct LCS_EatsApp: View {
     @StateObject var order = Order(name: "", phoneNumberOrEmail: "", pickup: false, restaurant: .mcdonalds, items: [])
     @StateObject var store = OrderStore()
     @StateObject var app = AppState()
+    @State private var currentTab = 0
     
     // These are used to make sure the badge is located in the correct spot
     private var badgePosition: CGFloat = 2
@@ -54,7 +55,22 @@ struct LCS_EatsApp: View {
                             Image(systemName: "person.fill.questionmark")
                             Text("Info")
                         }
-                    
+                    NavigationView {
+                        
+                        TabView(selection: $currentTab,
+                                        content:  {
+                                            ForEach(OnboardingData.list) { viewData in
+                                                OnboardingView(data: viewData)
+                                                    .tag(viewData.id)
+                                            }
+                                        })
+                                    .tabViewStyle(PageTabViewStyle())
+                                    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+                            }
+                    .tabItem {
+                        Image(systemName: "questionmark")
+                        Text("Help")
+                        
                     
                 }
                 
@@ -71,8 +87,8 @@ struct LCS_EatsApp: View {
                 .frame(width: 15, height:15)
                 .offset(x: (( 2 * badgePosition) - 0.95) * (geo.size.width / (2 * tabsCount)) + 2, y: -30)
                 .opacity(order.items.count == 0 ? 0 : 1.0)
+                }
             }
-            
         }
     }
 }
