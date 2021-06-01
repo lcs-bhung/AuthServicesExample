@@ -20,11 +20,11 @@ struct OnboardingView: View {
                 Image(data.backgroundImage)
                     .resizable()
                     .scaledToFit()
-
+//                    .offset(x: 0, y: -100)
                 Image(data.objectImage)
                     .resizable()
                     .scaledToFit()
-                    .offset(x: 0, y: 150)
+                    .offset(x: 0, y: 100)
                     .scaleEffect(isAnimating ? 1 : 0.9)
             }
 
@@ -45,37 +45,41 @@ struct OnboardingView: View {
 
             Spacer()
 
-            Button(action: {
-                // Add action for button
-//               NavigationLink(<#T##titleKey: LocalizedStringKey##LocalizedStringKey#>, destination: CreateOrderView)
-                
-            }, label: {
-                Text("Get Started")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding(.horizontal, 50)
-                    .padding(.vertical, 16)
-                    .background(
-                        RoundedRectangle(cornerRadius: 20)
-                            .foregroundColor(
-                                Color(
-                                    red: 255 / 255,
-                                    green: 115 / 255,
-                                    blue: 115 / 255
-                                )
-                            )
-                    )
-            })
-            .shadow(radius: 10)
-
-            Spacer()
+//            Button(action: {
+//                // Add action for button
+//               NavigationLink(
+//                destination: CreateOrderView(store: store),
+//                label: {
+//                    /*@START_MENU_TOKEN@*/Text("Navigate")/*@END_MENU_TOKEN@*/
+//                })
+//
+//            }, label: {
+//                Text("Get Started")
+//                    .font(.headline)
+//                    .foregroundColor(.white)
+//                    .padding(.horizontal, 50)
+//                    .padding(.vertical, 16)
+//                    .background(
+//                        RoundedRectangle(cornerRadius: 20)
+//                            .foregroundColor(
+//                                Color(
+//                                    red: 255 / 255,
+//                                    green: 115 / 255,
+//                                    blue: 115 / 255
+//                                )
+//                            )
+//                    )
+//            })
+//            .shadow(radius: 10)
+//
+//            Spacer()
         }
-        .onAppear(perform: {
-            isAnimating = false
-            withAnimation(.easeOut(duration: 0.5)) {
-                self.isAnimating = true
-            }
-        })
+//        .onAppear(perform: {
+//            isAnimating = false
+//            withAnimation(.easeOut(duration: 0.5)) {
+//                self.isAnimating = true
+//            }
+//        })
     }
 }
 
